@@ -1,0 +1,318 @@
+/*==========  Desktop First Method  ==========*/
+
+/* xxl */
+@media only screen and (max-width : 1650px) {
+	.head__tel {
+		margin-left: 80px;
+	}
+
+	.head__list_link {
+		margin-left: 50px;
+	}
+
+	.home h1 {
+		white-space: nowrap;
+	}
+}
+
+/* xxl */
+@media only screen and (max-width : 1440px) {
+	.info .service {
+		left: -95px;
+	}
+
+	.info .service:before {
+		top: -70px;
+		width: 93px;
+		left: -246px;
+	}
+
+	.head__list_link {
+		margin-left: 30px;
+	}
+
+	a.head__tel {
+		margin-left: 45px;
+	}
+
+	.head__list_link:first-of-type {
+		margin: 0;
+	}
+
+	.info ul li span {
+		top: 50%;
+		margin-top: -25px;
+	}
+
+	.repair:after {
+		width: 45%;
+		margin: 0;
+	}
+}
+
+/* xl */
+@media only screen and (max-width : 1200px) {
+	.head nav {
+		display: none;
+	}
+
+	a.head__tel {
+		margin: 0;
+		float: right;
+		margin-right: 50px;
+	}
+
+	.info ul li span {
+		top: 50%;
+		margin-top: -25px;
+	}
+
+	.head__call {
+		width: 100%;
+	}
+
+	section.block.problem {
+		background: #fff;
+	}
+
+	.info .service {
+		left: -120px;
+	}
+}
+
+/* lg */
+@media only screen and (max-width : 992px) {
+	form.home__form {
+		max-width: 450px;
+		margin-top: 50px;
+	}
+
+	.btn {
+		white-space: nowrap;
+	}
+
+	section.home {
+		height: auto;
+		min-height: auto;
+	}
+
+	.home h1 {
+		margin-bottom: 30px;
+	}
+
+	.home p {
+		line-height: 30px;
+	}
+
+	section.block.info {
+		padding-bottom: 0;
+	}
+
+	.home__bg {
+		padding: 50px 0;
+		padding-top: 150px;
+	}
+}
+
+/* md */
+@media only screen and (max-width : 768px) {
+	.hidden-sm {
+		display: none;
+	}
+
+	a.head__tel {
+		margin: 0;
+		font-size: 24px;
+	}
+
+	.info .service {
+		display: none;
+	}
+
+	section.block.info {
+		padding: 50px 0;
+	}
+
+	.block h2 {
+		margin-bottom: 20px;
+	}
+
+	.block h3 {
+		margin-bottom: 20px;
+	}
+
+	.pl-3 {
+		margin-bottom: 50px;
+	}
+
+	.btn {
+		margin-top: 30px;
+	}
+
+	.info ul li {
+		margin-bottom: 30px;
+	}
+
+	section.block.info {
+		padding-bottom: 0;
+	}
+
+	.repair__wel {
+		font-size: 50px;
+		line-height: 65px;
+		bottom: 17px;
+	}
+
+	.repair__wel_item:before {
+		height: 65px;
+		top: -2px;
+		margin-left: -4947px;
+	}
+
+	.repair__wel_item:after {
+		height: 65px;
+		top: -2px;
+		width: 110px;
+		left: 53px;
+	}
+
+	section.block.problem {
+		padding-top: 30px;
+	}
+
+	.problem .call {
+		margin-top: 30px;
+	}
+
+	.home p {
+		white-space: normal;
+	}
+
+	.home p br {
+		display: none;
+	}
+
+	.home h1 {
+		white-space: normal;
+	}
+}
+
+/* sm */
+@media only screen and (max-width : 560px) {
+	.home h1 {
+		text-align: center;
+		font-size: 30px;
+		line-height: 40px;
+	}
+
+	.home p {
+		text-align: center;
+		font-size: 16px;
+	}
+
+	.home__bg {
+		background: rgba(0, 0, 0, 0.64);
+	}
+
+	form.home__form {
+		max-width: 400px;
+		display: block;
+		margin: 0 auto;
+		margin-top: 30px;
+	}
+}
+
+/* xs */
+@media only screen and (max-width : 480px) {
+	.head__logo img {
+		width: 140px;
+	}
+
+	a.head__tel {
+		font-size: 18px;
+	}
+
+	.home__bg {
+		padding-top: 110px;
+		padding-bottom: 15px;
+	}
+
+	.home__form_button {
+		padding: 0;
+		width: 100%;
+	}
+
+	section.block.info {
+		padding: 30px 0;
+		padding-bottom: 0;
+	}
+
+	.pl-3 {
+		margin-bottom: 30px;
+		padding-left: 0;
+	}
+
+	.btn {
+		margin-top: 15px;
+	}
+
+	.info ul li {
+		margin-bottom: 15px;
+	}
+
+	.repair__wel {
+		font-size: 24px;
+		line-height: 30px;
+		bottom: -32px;
+	}
+
+	.repair__wel_item:before {
+		height: 30px;
+	}
+
+	.repair__wel_item:after {
+		height: 30px;
+		left: 26px;
+		width: 49px;
+	}
+
+	section.repair {
+		padding-bottom: 0;
+		margin-bottom: 30px;
+	}
+
+	.repair:after {
+		bottom: -15px;
+		height: 15px;
+	}
+
+	.block h2 {line-height: 35px;}
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
