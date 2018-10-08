@@ -101,6 +101,9 @@ gulp.task('build', ['clean', 'img', 'styles', 'js'], function() {
 	var buildFonts = gulp.src('app/fonts/**/*') // Переносим шрифты в продакшен
 	.pipe(gulp.dest('dist/fonts'))
 
+	var buildLibs = gulp.src('app/libs/**/*') // Переносим плагины в продакшен
+	.pipe(gulp.dest('dist/libs'))
+
 	var buildJs = gulp.src('app/js/**/*') // Переносим скрипты в продакшен
 	.pipe(gulp.dest('dist/js'))
 
