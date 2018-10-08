@@ -1,6 +1,47 @@
 @import "vars"
 @import "libs"
 
+@font-face
+  font-family: 'Roboto Condensed'
+  src: local("Roboto Condensed Light"), local("RobotoCondensed-Light"), url('../fonts/RobotoCondensed/Robotocondensedlight.woff2') format("woff2"), url('../fonts/RobotoCondensed/Robotocondensedlight.woff') format("woff"), url('../fonts/RobotoCondensed/condensedlight.ttf') format("truetype")
+  font-weight: 300
+  font-style: normal
+
+
+@font-face
+  font-family: 'Roboto Condensed'
+  src: local("Roboto Condensed Light Italic"), local("RobotoCondensed-LightItalic"), url('../fonts/RobotoCondensed/Robotocondensedlightitalic.woff2') format("woff2"), url('../fonts/RobotoCondensed/Robotocondensedlightitalic.woff') format("woff"), url('../fonts/RobotoCondensed/Robotocondensedlightitalic.ttf') format("truetype")
+  font-weight: 300
+  font-style: italic
+
+
+@font-face
+  font-family: 'Roboto Condensed'
+  src: local("Roboto Condensed"), local("RobotoCondensed-Regular"), url('../fonts/RobotoCondensed/Robotocondensed.woff2') format("woff2"), url('../fonts/RobotoCondensed/Robotocondensed.woff') format("woff"), url('../fonts/RobotoCondensed/Robotocondensed.ttf') format("truetype")
+  font-weight: 400
+  font-style: normal
+
+
+@font-face
+  font-family: 'Roboto Condensed'
+  src: local("Roboto Condensed Italic"), local("RobotoCondensed-Italic"), url('../fonts/RobotoCondensed/Robotocondenseditalic.woff2') format("woff2"), url('../fonts/RobotoCondensed/Robotocondenseditalic.woff') format("woff"), url('../fonts/RobotoCondensed/Robotocondenseditalic.ttf') format("truetype")
+  font-weight: 400
+  font-style: italic
+
+
+@font-face
+  font-family: 'Roboto Condensed'
+  src: local("Roboto Condensed Bold"), local("RobotoCondensed-Bold"), url('../fonts/RobotoCondensed/Robotocondensedbold.woff2') format("woff2"), url('../fonts/RobotoCondensed/Robotocondensedbold.woff') format("woff"), url('../fonts/RobotoCondensed/Robotocondensedbold.ttf') format("truetype")
+  font-weight: 700
+  font-style: normal
+
+
+@font-face
+  font-family: 'Roboto Condensed'
+  src: local("Roboto Condensed Bold Italic"), local("RobotoCondensed-BoldItalic"), url('../fonts/RobotoCondensed/Robotocondensedbolditalic.woff2') format("woff2"), url('../fonts/RobotoCondensed/Robotocondensedbolditalic.woff') format("woff"), url('../fonts/RobotoCondensed/Robotocondensedbolditalic.ttf') format("truetype")
+  font-weight: 700
+  font-style: italic
+
 ::placeholder
 	color: #666
 
@@ -23,6 +64,10 @@ body
 			border-color: red
 		&:required:valid
 			border-color: green
+
+.z100
+	z-index: 100
+	position: relative
 
 main
 	overflow: hidden
@@ -326,3 +371,221 @@ a:hover
 	.call
 		margin-top: 50px	
 
+.master
+	position: relative
+	margin-top: 100px
+	&:before
+		content: ''
+		position: absolute
+		width: 50%
+		height: 85%
+		background: url(../img/master.png) no-repeat	
+		z-index: 0
+		top: 0
+		left: 0
+		background-size: cover
+		background-position: 50%
+	&__blockImg
+		position: relative
+		z-index: 1	
+		&_car
+			width: 80%
+			position: relative
+			margin-top: -180px
+			z-index: 3
+			img
+				max-width: 100%
+		&_del
+			position: absolute
+			right: 0
+			top: 50%
+			margin-top: -160px
+			width: 100%
+			text-align: right
+			background-image: linear-gradient(180deg, #000000 0%, #a0a0a1 100%)
+	&__bot
+		margin-top: -100px
+		position: relative
+
+.btn-black
+	display: inline-block
+	background: $text
+	color: #fff
+	font-weight: 700
+	text-transform: uppercase
+	border: 0
+	height: 50px
+	line-height: 50px
+	padding: 0px 60px	
+	margin: 30px 0px
+	transition: all .3s
+	&:hover
+		cursor: pointer
+		background: $accent
+		color: $text
+		transition: all .3s
+
+.slick-slide
+	&:focus
+		outline: none
+	&:active
+		outline: none
+
+.brand-slide
+	margin-top: -50px
+	margin-bottom: 100px		
+	.brand
+		margin-top: 50px
+
+.comment
+	margin-top: 150px		
+	position: relative
+	&__before
+		position: absolute
+		left: 0
+		top: 25px
+		transform: rotate(90deg)
+		font-size: 72px
+		font-weight: 700
+		color: #000
+		width: 150px
+		&:before
+			content: ''
+			position: absolute
+			width: 85px
+			height: 30px
+			background: $accent
+			left: 0
+			top: 105px
+	&__play
+		position: absolute
+		right: 0
+		width: 50%
+		top: 0
+		&:before
+			content: ''
+			margin-right: -305px
+			width: 609px
+			height: 608px
+			position: absolute
+			right: 0
+			bottom: -305px
+			background: url(../img/romb.svg) no-repeat
+			background-position: 50%
+			background-size: cover
+			z-index: 3	
+			text-align: right	
+		&_block
+			position: relative
+			top: 0
+			right: 0
+			width: 100%
+			display: block
+			background: url(../img/comment.jpg) no-repeat	
+			background-size: cover
+			background-position: 50%	
+			overflow: hidden
+			transition: all .5s
+			border-radius: 15px 0 0 15px
+			max-height: 530px
+			.master-img
+					transition: all .5s
+					width: 100%
+			&:hover
+				.master-img
+					transform: scale(1.05, 1.05)
+					transition: all .5s
+			span
+				display: block
+				width: 115px
+				height: 115px
+				background: $accent
+				border-radius: 100%
+				position: absolute
+				left: 50%
+				top: 50%
+				margin-left: -57.5px
+				margin-top: -57.5px
+				text-align: center
+				line-height: 115px
+				transition: all .5s
+				img
+					width: 33px
+					height: 44px
+					margin-right: -10px
+					transition: all .5s
+			&:hover
+				span
+					background: #000	
+				.play
+					filter: invert(100%)		
+
+.mapp
+	position: relative
+	margin-top: 80px
+	a
+		color: #000
+	&__map
+		height: 100%
+		width: 40%
+		position: absolute
+		left: 0
+		top: 0
+		z-index: 2
+
+ymaps
+	filter: grayscale(1)
+
+.form-footer
+	width: 400px
+	margin-top: 100px
+	margin-bottom: 30px
+	&_title
+		text-align: center
+		font-size: 20px
+		font-weight: 400
+		margin-bottom: 30px
+	&_input
+		width: 100%
+		display: block	
+		border: 0
+		border-top: 1px solid #000
+		height: 50px
+		line-height: 50px
+		padding-left: 30px
+		color: #000
+	&_text
+		width: 100%
+		height: 150px
+		border: 0
+		border-top: 1px solid #000
+		border-bottom: 1px solid #000
+		padding: 15px 30px
+	&_button
+			display: inline-block
+			background: $text
+			color: #fff
+			font-weight: 700
+			text-transform: uppercase
+			border: 0
+			height: 50px
+			line-height: 50px
+			padding: 0px 80px	
+			margin: 30px 0px
+			transition: all .3s
+			&:hover
+				cursor: pointer
+				background: $accent
+				color: $text
+				transition: all .3s		
+
+footer
+	background: $accent
+	p
+		margin: 0
+		padding: 15px 0px
+		font-size: 18px
+		a
+			color: #000
+			display: block
+			text-align: right				
