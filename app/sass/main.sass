@@ -643,42 +643,17 @@ p.text-center.title-call
 	&::-webkit-scrollbar
 	  width: 3px	
 
-.fancybox-overlay.fancybox-overlay-fixed
-	&:before
-		content: ''
-		background: url(../img/logo-w.svg) no-repeat
-		width: 237px
-		height: 100px
-		position: absolute
-		width: 1650px
-		display: block
-		margin: 0 auto
-		top: 0
-		left: 50%
-		margin-left: -825px
-		background-position: 23px 17px
-		background-size: 237px 67px
-
-.fancybox-wrap.fancybox-desktop.fancybox-type-inline.fancybox-opened 
-	top: 85px !important
-
-.fancybox-inner 
-	overflow: hidden !important
-	overflow-y: auto !important
-
-
 a.fancybox-my-close 
 	position: absolute
 	right: 15px
-	top: -60px
-	width: 50px
-	height: 50px
+	top: 0px
+	width: 30px
+	height: 30px
 
 .polit 
 	color: #fff
 	max-height: 700px
 	.container	
-		width: 1650px
   form.form-footer
     margin: 0 auto
     background: none
@@ -705,6 +680,8 @@ a.fancybox-my-close
 .jq-selectbox.jqselect
   width: 100%
 
+.jq-selectbox__dropdown
+	font-family: $default-font
 .jq-selectbox__select
   border: 0
   background: none
@@ -713,6 +690,7 @@ a.fancybox-my-close
   height: 50px
   line-height: 50px
   border-top: 1px solid #000
+  font-family: $default-font
   &:hover
     background: none
     padding-left: 15px
@@ -751,3 +729,10 @@ a.fancybox-my-close
 .slick-slide 
 	padding: 0 15px
 	text-align: center
+
+#video 
+	padding: 50px
+	width: 900px
+	max-width: 100%
+	height: 500px
+	max-height: 100%

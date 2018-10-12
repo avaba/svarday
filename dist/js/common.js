@@ -43,6 +43,7 @@ jQuery(document).ready(function($){
 	});
 
 	$(".fancybox").fancybox({
+		padding: 0,
 		tpl:{
 			closeBtn : '<a title="Закрыть" class="fancybox-my-close" href="javascript:;"><img src="img/cross.svg" alt="Закрыть"></a>',
 		},	
